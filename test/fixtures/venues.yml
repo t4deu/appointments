@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: CoperNath
+  state: PB
+  city: João Pessoa
+  zip: 60710710
+  address: R. belo horizonte
+  email: salon@mail.com
+  phone: (85) 2331-2221
+  cellphone: 83 91334-3341
+  zapzap: +55 83 94412-2331
+
+two:
+  name: Beauth Me
+  state: CE
+  city: Fortaleza
+  zip: 60710705
+  address: Rua dos prea
+  email: beauth.me@mail.com
+  phone: (88) 12334-1133
+  cellphone: 89 12333 1133
+  zapzap: 88822339

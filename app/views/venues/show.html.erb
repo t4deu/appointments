@@ -1,0 +1,41 @@
+<div class="page-header">
+  <%= link_to venues_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_venue_path(@venue), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show venue</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @venue.name %></dd>
+
+  <dt>Email:</dt>
+  <dd><%= @venue.email %></dd>
+
+  <dt>Phone:</dt>
+  <dd><%= @venue.phone %></dd>
+
+  <dt>Cellphone:</dt>
+  <dd><%= @venue.cellphone %></dd>
+
+  <dt>Zapzap:</dt>
+  <dd><%= @venue.zapzap %></dd>
+
+  <dt>Address:</dt>
+  <dd><%= @venue.address %></dd>
+
+  <dt>City:</dt>
+  <dd><%= @venue.city %></dd>
+
+  <dt>State:</dt>
+  <dd><%= @venue.state %></dd>
+
+  <dt>Zip:</dt>
+  <dd><%= @venue.zip %></dd>
+
+</dl>
