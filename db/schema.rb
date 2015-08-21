@@ -60,6 +60,14 @@ ActiveRecord::Schema.define(version: 20150802210506) do
     t.datetime "updated_at",             null: false
   end
 
+  create_table "providers_services", id: false, force: :cascade do |t|
+    t.integer "provider_id", limit: 4
+    t.integer "service_id",  limit: 4
+  end
+
+  add_index "providers_services", ["provider_id"], name: "index_providers_services_on_provider_id", using: :btree
+  add_index "providers_services", ["service_id"], name: "index_providers_services_on_service_id", using: :btree
+
   create_table "services", force: :cascade do |t|
     t.integer  "venue_id",    limit: 4
     t.string   "name",        limit: 255,                           null: false
@@ -69,14 +77,6 @@ ActiveRecord::Schema.define(version: 20150802210506) do
     t.datetime "created_at",                                        null: false
     t.datetime "updated_at",                                        null: false
   end
-
-  create_table "services_providers", id: false, force: :cascade do |t|
-    t.integer "service_id",  limit: 4
-    t.integer "provider_id", limit: 4
-  end
-
-  add_index "services_providers", ["provider_id"], name: "index_services_providers_on_provider_id", using: :btree
-  add_index "services_providers", ["service_id"], name: "index_services_providers_on_service_id", using: :btree
 
   create_table "venues", force: :cascade do |t|
     t.string   "name",       limit: 255, null: false

@@ -1,15 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  email: MyString
-  phone: MyString
-  cellphone: MyString
-  zapzap: MyString
+  services: one
+  name: Carlos
+  email: carlos@mail.com
+  phone: 88733-22444
+  cellphone: 23 9999-4422
+  zapzap: (23) 444 23333
 
 two:
-  name: MyString
-  email: MyString
-  phone: MyString
-  cellphone: MyString
-  zapzap: MyString
+  name: Margerita
+  email: marg@mail.com
+  phone: 66668888
+  cellphone: 77777777
+  zapzap: +55 87 88123 3331

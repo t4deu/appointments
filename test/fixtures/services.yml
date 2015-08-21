@@ -2,15 +2,17 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  venue: 
-  name: MyString
-  description: MyText
+  venue: one
+#  providers: one
+  name: Corte de cabelo
+  description: Lindas tranças loiras
   duration: 1
   price: 9.99
 
 two:
-  venue: 
-  name: MyString
-  description: MyText
+  venue: two
+#  providers: two
+  name: Pintura de sobrancelhas
+  description: Expressões facias que vc precisa
   duration: 1
   price: 9.99

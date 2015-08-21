@@ -15,6 +15,7 @@ class ServicesController < ApplicationController
   # GET /services/new
   def new
     @service = Service.new
+    @service.venue_id = params.require(:venue)
   end
 
   # GET /services/1/edit

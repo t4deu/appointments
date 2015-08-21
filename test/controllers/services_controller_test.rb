@@ -10,7 +10,7 @@ describe ServicesController do
   end
 
   it "gets new" do
-    get :new
+    get :new, venue: service.venue_id
     value(response).must_be :success?
   end
 
